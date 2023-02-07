@@ -52,6 +52,8 @@ const BoardWrite = () => {
       formData.append("ref", ref);
       formData.append("re_step", re_step);
       formData.append("re_level", re_level);
+      //navigator(`/board/list/${response.data}`); 밑에 이거 사용시 필요함
+      formData.append("currentPage", currentPage);
     }
 
     const config = {
